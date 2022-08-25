@@ -1,0 +1,14 @@
+@use "../util/colors" as u;
+
+@mixin socialmedia($bottom, $left) {
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  display: flex;
+  align-items: center;
+  background-color: u.$very-dark-grayis-blue;
+  color: u.$grayish-blue;
+  gap: 1rem;
+
+  @content;
+}
